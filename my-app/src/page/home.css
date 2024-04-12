@@ -1,0 +1,274 @@
+body {
+  /* display: flex;
+    flex-direction: column; */
+  margin: 0;
+  /* justify-content: center; */
+  background-color: rgb(241, 242, 241);
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(241, 242, 241);
+
+}
+
+.header {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  width: 100%;
+  height: 60px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.705); */
+  background-color: rgb(48, 49, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.left {
+  /* border: solid red 1px; */
+  height: 100%;
+  padding-left: 9%;
+  align-items: center;
+  display: flex;
+  margin-left: -60%;
+  justify-content: center;
+}
+
+.header-ul li {
+  display: inline-block;
+  /* border: solid red 1px; */
+
+}
+
+.header-ul li a {
+  display: inline-block;
+  color: white;
+  /* opacity: 0.8; */
+  text-decoration: none;
+  padding: 12px;
+  transition: all .12s ease-in-out;
+  font-style: normal;
+  font-weight: 300;
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+  /* margin-left: 30px; */
+  /* border: black solid; */
+  /* border: solid 1px red; */
+}
+
+.menu {
+  display: flex;
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+  width: 1217px;
+
+}
+
+.mini-menu {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  /* border: solid black 1px; */
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.burger {
+  margin-left: 2%;
+}
+
+.logo {
+  margin-left: 2%;
+}
+
+.news {
+  margin-left: 4%;
+}
+
+.articles {
+  margin-left: 1.6%;
+}
+
+.info {
+  margin-left: 1.6%;
+}
+
+.language {
+  margin-left: 36%;
+}
+
+.search {
+  margin-left: 1%;
+}
+
+.whatsapp {
+  background-color: rgb(50, 168, 1);
+  display: flex;
+  width: 1217px;
+  height: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+
+.main {
+  display: flex;
+  width: 1217px;
+  background-color: white;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.main-news {
+  width: 70%;
+  height: 512px;
+  margin-left: 3%;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.img_main {
+  width: 100%;
+  height: 100%;
+}
+
+.title-overlay {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.234);
+  color: white;
+  margin-left: 50%;
+  margin-top: -11.2%;
+  width: 100%;
+}
+
+.title-text {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.time_main{
+  color: white;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.scroll_menu{
+  /* border: solid 1px black; */
+  width: 30%;
+  height: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .mini_news{
+  border: solid black 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
+
+.mini_news{
+  /* border: solid black 1px; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont_mini{
+  /* border: solid red 1px; */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+
+.news_mini{
+  /* border: solid blue 1px; */
+  /* padding: 123px 15.7%; */
+  width: 32%;
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_mini{
+  /* border: solid brown 1px; */
+  width: 100%;
+  height: 62%;
+  display: flex;
+  
+}
+
+.title_mini{
+  text-align: left;
+  font-weight: 500;
+  /* border: solid black 1px; */
+  font-size: 18px;
+
+}
+
+.static_mini{
+  text-align: left;
+  color: #7f8188;
+  font-size: 12px;
+}
+
+.im_im{
+  width: 100%;
+  height: 100%;
+}
+
+.scrollnews{
+  border-bottom: solid #eaeaec 0.5px;
+  height: 100px;
+  margin-left: 9%;
+  cursor: pointer;
+}
+
+.title_scrollnews{
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 5%;
+  /* border: solid 1px black; */
+}
+
+.scrolltimenews{
+  text-align: left;
+  margin-left: 2%;
+  color: #7f8188;
+  font-size: 12px;
+  margin-top: 4%;
+}
+
+.scroll_menu {
+  display: flex;
+  max-height: 700px;
+  overflow-y:auto;
+}
+
+/* Стилизация скроллбара */
+.scroll_menu::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+.scroll_menu::-webkit-scrollbar-thumb {
+  background-color: green; /* Задаем зеленый цвет для ползунка скроллбара */
+}
